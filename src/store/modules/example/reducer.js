@@ -5,8 +5,8 @@ const initialState = {
   botaoClicado: false,
 };
 
-// eslint-disable-next-line func-names
-export default function (action, state = initialState) {
+// eslint-disable-next-line default-param-last, func-names
+export default function (state = initialState, action) {
   switch (action.type) {
     case types.BOTAO_CLICADO_SUCCESS: {
       // eslint-disable-next-line no-console
